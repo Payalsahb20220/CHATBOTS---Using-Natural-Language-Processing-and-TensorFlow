@@ -1,0 +1,249 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "How are you",
+                "Is anyone there?",
+                "Good day",
+                "Hey",
+                "What's up?"
+            ],
+            "responses": [
+                "Hello!",
+                "Hi there!",
+                "Hi, how can I help you?",
+                "Good to see you!",
+                "Hey! How can I assist you today?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "I'm leaving",
+                "Have a nice day"
+            ],
+            "responses": [
+                "Goodbye!",
+                "See you later!",
+                "Have a nice day!",
+                "Bye! Come back soon."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thanks a lot",
+                "Much appreciated"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Happy to help!",
+                "Anytime!",
+                "My pleasure!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "What are your hours?",
+                "When are you open?",
+                "When do you open and close?",
+                "What time do you open?",
+                "What time do you close?"
+            ],
+            "responses": [
+                "We're open every day from 9am to 9pm.",
+                "Our hours are 9am to 9pm every day.",
+                "We operate from 9am to 9pm daily."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Where are you located?",
+                "What is your address?",
+                "Where can I find you?",
+                "Where is your location?",
+                "What's your location?"
+            ],
+            "responses": [
+                "We're located at 123 Main St.",
+                "Our address is 123 Main St.",
+                "You can find us at 123 Main St."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "services",
+            "patterns": [
+                "What services do you offer?",
+                "Tell me about your services",
+                "Can you help me with XYZ?",
+                "What can you do?",
+                "What do you provide?"
+            ],
+            "responses": [
+                "We offer a range of services including A, B, and C.",
+                "Our services include A, B, and C. How can I help you?",
+                "We provide A, B, C services. Let me know how I can assist you."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Are you cash only?",
+                "What payment methods do you accept?",
+                "Can I pay by card?"
+            ],
+            "responses": [
+                "We accept VISA, Mastercard, and AMEX.",
+                "We accept most major credit cards.",
+                "You can pay with cash or card."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "opentoday",
+            "patterns": [
+                "Are you open today?",
+                "When do you open today?",
+                "What are your hours today?",
+                "Is it open today?",
+                "Can I visit today?"
+            ],
+            "responses": [
+                "We're open today from 9am to 9pm.",
+                "Our hours today are 9am to 9pm.",
+                "Yes, we're open today from 9am to 9pm."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "rental",
+            "patterns": [
+                "Can we rent a moped?",
+                "I'd like to rent a moped",
+                "How does this work?",
+                "How can I rent a moped?",
+                "What is the rental process?"
+            ],
+            "responses": [
+                "Are you looking to rent today or later this week?",
+                "We can help you with the rental process. Are you looking to rent now or later?",
+                "Please specify if you want to rent today or another day."
+            ],
+            "context_set": "rentalday"
+        },
+        {
+            "tag": "today",
+            "patterns": [
+                "today",
+                "Can I rent a moped today?",
+                "Is it possible to rent a moped today?",
+                "Do you have rentals available today?"
+            ],
+            "responses": [
+                "For rentals today, please call 1-800-MYMOPED.",
+                "Same-day rentals, please call 1-800-MYMOPED.",
+                "You can rent a moped today by calling 1-800-MYMOPED."
+            ],
+            "context_filter": "rentalday"
+        },
+        {
+            "tag": "price",
+            "patterns": [
+                "How much does it cost?",
+                "What is the price?",
+                "What are the charges?",
+                "How much do you charge?",
+                "Can you tell me the price?"
+            ],
+            "responses": [
+                "Our prices vary depending on the service. Please specify which service you're interested in.",
+                "The cost depends on the specific service. Could you tell me which service you need the price for?",
+                "Please let me know which service you're asking about, and I'll provide the price details."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "appointment",
+            "patterns": [
+                "Can I book an appointment?",
+                "How do I schedule an appointment?",
+                "I'd like to make an appointment.",
+                "How can I book a slot?",
+                "Is it possible to book an appointment?"
+            ],
+            "responses": [
+                "You can book an appointment by calling our office or using our online booking system.",
+                "To schedule an appointment, please visit our website or call us directly.",
+                "Appointments can be booked through our online portal or by phone."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "cancellation",
+            "patterns": [
+                "How do I cancel my appointment?",
+                "Can I cancel my booking?",
+                "I'd like to cancel my appointment.",
+                "How can I cancel?",
+                "Is it possible to cancel my appointment?"
+            ],
+            "responses": [
+                "You can cancel your appointment by calling our office or using our online cancellation form.",
+                "To cancel, please visit our website or call us directly.",
+                "Cancellations can be made through our online portal or by phone."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "reschedule",
+            "patterns": [
+                "Can I reschedule my appointment?",
+                "How do I change my booking?",
+                "I'd like to reschedule.",
+                "How can I reschedule?",
+                "Is it possible to change my appointment time?"
+            ],
+            "responses": [
+                "You can reschedule your appointment by calling our office or using our online rescheduling tool.",
+                "To change your booking, please visit our website or call us directly.",
+                "Rescheduling can be done through our online portal or by phone."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "How can I contact you?",
+                "What is your phone number?",
+                "How do I get in touch?",
+                "Can you give me your contact details?",
+                "How can I reach you?"
+            ],
+            "responses": [
+                "You can contact us at 1-800-123-4567.",
+                "Our phone number is 1-800-123-4567.",
+                "Feel free to call us at 1-800-123-4567."
+            ],
+            "context_set": ""
+        }
+    ]
+}
